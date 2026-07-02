@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Quest | Challenges</title>
+    <meta name="description" content="Twenty kid-friendly Python challenge questions arranged as a game-style quiz." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero compact-hero">
+      <nav class="nav">
+        <div class="brand">🐍 Python Quest</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="learning.html" class="nav-link">Learning Notes</a>
+          <a href="challenges.html" class="nav-link">Challenges</a>
+        </div>
+      </nav>
+
+      <div class="page-hero">
+        <p class="eyebrow">Challenge arena</p>
+        <h1>Complete the quests and earn your coding stars</h1>
+        <p class="lead">Each question is a tiny mission to help you remember your Python super powers.</p>
+      </div>
+
+      <div class="status-panel" aria-label="Challenge progress">
+        <div class="status-card">
+          <span class="status-label">Progress</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <p class="status-text" id="progressText">0 / 20 challenges completed</p>
+        </div>
+        <div class="status-card">
+          <span class="status-label">Stars earned</span>
+          <div class="star-count" id="starCount">⭐ 0</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section quiz-section">
+        <div class="quiz-card">
+          <h3>Question 1: What are variables like in our game?</h3>
+          <div class="choices" data-correct="Treasure chests">
+            <button class="choice">Treasure chests</button>
+            <button class="choice">Ghosts</button>
+            <button class="choice">Clouds</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 2: What does a loop help you do?</h3>
+          <div class="choices" data-correct="Repeat actions">
+            <button class="choice">Hide treasures</button>
+            <button class="choice">Repeat actions</button>
+            <button class="choice">Stop the game</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 3: What does print do?</h3>
+          <div class="choices" data-correct="Shows text or numbers">
+            <button class="choice">Stops the game</button>
+            <button class="choice">Shows text or numbers</button>
+            <button class="choice">Deletes a file</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 4: What are comments for?</h3>
+          <div class="choices" data-correct="Helpful notes for humans">
+            <button class="choice">Helpful notes for humans</button>
+            <button class="choice">Magic spells</button>
+            <button class="choice">Game sound effects</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 5: What is a string?</h3>
+          <div class="choices" data-correct="A piece of text">
+            <button class="choice">A number only</button>
+            <button class="choice">A piece of text</button>
+            <button class="choice">A sound</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 6: What is an integer?</h3>
+          <div class="choices" data-correct="A whole number">
+            <button class="choice">A whole number</button>
+            <button class="choice">A color</button>
+            <button class="choice">A word</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 7: What is a list like in a game?</h3>
+          <div class="choices" data-correct="A backpack of items">
+            <button class="choice">A backpack of items</button>
+            <button class="choice">A secret door</button>
+            <button class="choice">A timer</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 8: What is a boolean?</h3>
+          <div class="choices" data-correct="True or false">
+            <button class="choice">A game map</button>
+            <button class="choice">True or false</button>
+            <button class="choice">A score board</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 9: What does input do?</h3>
+          <div class="choices" data-correct="Asks the player for information">
+            <button class="choice">Starts a new game</button>
+            <button class="choice">Asks the player for information</button>
+            <button class="choice">Creates a treasure</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 10: What does if check?</h3>
+          <div class="choices" data-correct="A condition">
+            <button class="choice">A condition</button>
+            <button class="choice">A sound</button>
+            <button class="choice">A picture</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 11: What does elif mean?</h3>
+          <div class="choices" data-correct="Another possible path">
+            <button class="choice">Another possible path</button>
+            <button class="choice">A treasure chest</button>
+            <button class="choice">A bug in the game</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 12: What does while do?</h3>
+          <div class="choices" data-correct="Keeps repeating while a rule is true">
+            <button class="choice">Keeps repeating while a rule is true</button>
+            <button class="choice">Creates a new level</button>
+            <button class="choice">Shows a welcome screen</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 13: What does a function help you do?</h3>
+          <div class="choices" data-correct="Save a useful action">
+            <button class="choice">Save a useful action</button>
+            <button class="choice">Make a new character</button>
+            <button class="choice">Hide the screen</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 14: What does return do?</h3>
+          <div class="choices" data-correct="Sends a value back">
+            <button class="choice">Sends a value back</button>
+            <button class="choice">Starts a new game</button>
+            <button class="choice">Deletes the code</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 15: What does append do?</h3>
+          <div class="choices" data-correct="Adds an item to a list">
+            <button class="choice">Adds an item to a list</button>
+            <button class="choice">Removes a player</button>
+            <button class="choice">Changes the color</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 16: What does len do?</h3>
+          <div class="choices" data-correct="Counts how many items there are">
+            <button class="choice">Counts how many items there are</button>
+            <button class="choice">Makes a sound</button>
+            <button class="choice">Creates a level</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 17: What does range do?</h3>
+          <div class="choices" data-correct="Creates a number sequence">
+            <button class="choice">Creates a number sequence</button>
+            <button class="choice">Shows the score</button>
+            <button class="choice">Chooses a winner</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 18: What does import do?</h3>
+          <div class="choices" data-correct="Adds extra tools to your program">
+            <button class="choice">Adds extra tools to your program</button>
+            <button class="choice">Deletes your code</button>
+            <button class="choice">Saves the game</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 19: What does == compare?</h3>
+          <div class="choices" data-correct="Whether two values are equal">
+            <button class="choice">Whether two values are equal</button>
+            <button class="choice">How fast the game is</button>
+            <button class="choice">A player's name</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+
+        <div class="quiz-card">
+          <h3>Question 20: What is Python mainly used for?</h3>
+          <div class="choices" data-correct="Building programs and games">
+            <button class="choice">Building programs and games</button>
+            <button class="choice">Flying a spaceship</button>
+            <button class="choice">Turning on a light</button>
+          </div>
+          <p class="feedback" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Keep going — every question makes you stronger.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

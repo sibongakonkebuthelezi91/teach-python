@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Quest | Learning Notes</title>
+    <meta name="description" content="Kid-friendly Python learning notes with colorful illustrations and simple examples." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero compact-hero">
+      <nav class="nav">
+        <div class="brand">🐍 Python Quest</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="learning.html" class="nav-link">Learning Notes</a>
+          <a href="challenges.html" class="nav-link">Challenges</a>
+        </div>
+      </nav>
+
+      <div class="page-hero">
+        <p class="eyebrow">Learning notes</p>
+        <h1>Story-style lessons with bright illustrations</h1>
+        <p class="lead">Each note turns a Python idea into a simple game concept so children can remember it easily.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section notes-section">
+        <div class="notes-grid">
+          <article class="notes-card">
+            <div class="illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 120" role="img">
+                <rect x="20" y="22" width="80" height="72" rx="16" fill="#38bdf8" />
+                <rect x="36" y="38" width="48" height="16" rx="8" fill="#f8fafc" />
+                <rect x="36" y="60" width="28" height="10" rx="5" fill="#f8fafc" />
+                <circle cx="93" cy="34" r="10" fill="#f59e0b" />
+              </svg>
+            </div>
+            <h3>Variables are treasure boxes</h3>
+            <p>Variables hold your game data so you can use it later. Think of them as labeled boxes for coins, lives, and scores.</p>
+            <pre><code>coins = 5
+print(coins)</code></pre>
+          </article>
+
+          <article class="notes-card">
+            <div class="illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 120" role="img">
+                <circle cx="60" cy="60" r="28" fill="#34d399" />
+                <path d="M42 52c0-10 8-18 18-18h8" stroke="#0f172a" stroke-width="8" stroke-linecap="round" fill="none" />
+                <path d="M78 70c0 10-8 18-18 18h-8" stroke="#0f172a" stroke-width="8" stroke-linecap="round" fill="none" />
+              </svg>
+            </div>
+            <h3>Loops repeat your moves</h3>
+            <p>Loops help your character repeat a jump, dance, or treasure check until the mission is complete.</p>
+            <pre><code>for step in range(3):
+    print("Jump!")</code></pre>
+          </article>
+
+          <article class="notes-card">
+            <div class="illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 120" role="img">
+                <rect x="24" y="28" width="72" height="64" rx="14" fill="#f472b6" />
+                <path d="M42 52h36" stroke="#f8fafc" stroke-width="8" stroke-linecap="round" />
+                <path d="M42 68h22" stroke="#f8fafc" stroke-width="8" stroke-linecap="round" />
+                <circle cx="88" cy="36" r="8" fill="#f59e0b" />
+              </svg>
+            </div>
+            <h3>Conditionals are game rules</h3>
+            <p>If a player has enough points, the game can say “You win!” If not, it can take another path.</p>
+            <pre><code>if score > 10:
+    print("You win!")</code></pre>
+          </article>
+
+          <article class="notes-card">
+            <div class="illustration" aria-hidden="true">
+              <svg viewBox="0 0 120 120" role="img">
+                <rect x="28" y="24" width="64" height="72" rx="18" fill="#818cf8" />
+                <circle cx="46" cy="58" r="8" fill="#f8fafc" />
+                <circle cx="74" cy="58" r="8" fill="#f8fafc" />
+                <path d="M50 74c7 8 14 8 20 0" stroke="#f8fafc" stroke-width="6" stroke-linecap="round" fill="none" />
+              </svg>
+            </div>
+            <h3>Functions are mini-games</h3>
+            <p>Functions let you save a helpful action so you can play it again and again without rewriting it.</p>
+            <pre><code>def collect_treasure():
+    print("You found gold!")</code></pre>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Every new idea is a new level in your coding adventure.</p>
+    </footer>
+  </body>
+</html>

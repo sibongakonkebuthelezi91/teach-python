@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Quest | Learn Python Like a Game</title>
+    <meta
+      name="description"
+      content="A playful website that teaches kids Python through game-style analogies and interactive challenges."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">🐍 Python Quest</div>
+        <div class="nav-links">
+          <a href="#lessons" class="nav-link">Start Learning</a>
+          <a href="learning.html" class="nav-link">Learning Notes</a>
+          <a href="challenges.html" class="nav-link">Challenges</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Game-inspired Python adventures</p>
+          <h1>Learn Python by playing the game of coding.</h1>
+          <p class="lead">
+            Each lesson feels like a level in a fun adventure. Collect treasure,
+            solve puzzles, and discover how Python works one step at a time.
+          </p>
+          <a href="#quiz" class="btn btn-primary">Play the First Challenge</a>
+        </div>
+        <div class="hero-card">
+          <div class="pixel-box">
+            <p>Level 1</p>
+            <h2>Treasure Hunt</h2>
+            <code>score = 10</code>
+            <span>Variables are treasure boxes for your data.</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="lessons" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Adventure map</p>
+          <h2>Meet the Python heroes</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>🧺 Variables = Treasure Chests</h3>
+            <p>
+              Variables hold your treasures so you can use them later. Think of them as labeled boxes.
+            </p>
+            <pre><code>coins = 5
+print(coins)</code></pre>
+          </article>
+
+          <article class="card">
+            <h3>🔁 Loops = Repeating Moves</h3>
+            <p>
+              Loops let your character repeat an action until the mission is complete.
+            </p>
+            <pre><code>for step in range(3):
+    print("Jump!")</code></pre>
+          </article>
+
+          <article class="card">
+            <h3>✅ Conditionals = Game Rules</h3>
+            <p>
+              If something is true, your game reacts. If not, it takes another path.
+            </p>
+            <pre><code>if score > 10:
+    print("You win!")</code></pre>
+          </article>
+
+          <article class="card">
+            <h3>🛠️ Functions = Mini-Games</h3>
+            <p>
+              Functions let you save a useful action so you can play it anytime.
+            </p>
+            <pre><code>def collect_treasure():
+    print("You found gold!")</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="section intro-links">
+        <div class="section-heading">
+          <p class="eyebrow">Explore</p>
+          <h2>Choose your next adventure</h2>
+        </div>
+        <div class="card-grid">
+          <a class="card link-card" href="learning.html">
+            <h3>📘 Learning notes</h3>
+            <p>Read friendly explanations full of illustrations and simple examples.</p>
+          </a>
+          <a class="card link-card" href="challenges.html">
+            <h3>🎯 Challenges</h3>
+            <p>Try 20 game-style quiz missions and test your Python super powers.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for curious kids ready to code their first adventure.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
